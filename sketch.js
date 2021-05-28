@@ -33,8 +33,13 @@ function setup(){
     box5 = new Box(810,160,70,70);
     log4 = new Log(760,120,150, PI/7);
     log5 = new Log(870,120,150, -PI/7);
+    log6 =  new Log(210,180,150, PI/2);
+    log7 =  new Log(210,180,150, PI/2);
 
     bird = new Bird(100,100);
+    bird2 = new Bird(99,99);
+    sling =  new SlingShot(bird.body,log6.body);
+    sling2 =  new SlingShot(bird2.body,log7.body);
 
 }
 
@@ -64,6 +69,11 @@ function draw(){
     box5.display();
     log4.display();
     log5.display();
+    log6.display();
+    log7.display();
 
+    sling.display();
+    sling2.display();
     bird.display();
+    bird2.display();
 }
